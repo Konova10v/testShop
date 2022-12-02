@@ -8,12 +8,37 @@
 import SwiftUI
 
 struct MainScreenView: View {
+    @ObservedObject var viewModel = MainScreenViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        RemoteContentView(remoteContent: viewModel,
+                          progress: {
+                            LoaderView(viewModel: LoaderViewModel(showBack: false))
+                          },
+                          failure: {error, retry in
+                            FailureView(msg: error.localizedDescription)
+                          }) {response in
+            createContentView(response: response)
+        }
+        .edgesIgnoringSafeArea(.all)
+    }
+    
+    @ViewBuilder func createContentView(response: MainScreenViewModel.Value) -> some View {
+        ZStack {
+            Resources.Colors.background
+            
+            VStack {
+             LocationAndFilterView()
+                    .padding(.top, 66)
+                
+                Spacer()
+            }
+        }
+        .ignoresSafeArea()
     }
 }
 
-struct MainScreenView_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainScreenView()
     }
