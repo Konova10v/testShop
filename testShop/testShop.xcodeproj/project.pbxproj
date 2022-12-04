@@ -13,10 +13,6 @@
 		6E4B29E62939EF17009CD8F1 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B29E52939EF17009CD8F1 /* MainScreenView.swift */; };
 		6E4B29E92939F048009CD8F1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B29E82939F048009CD8F1 /* Color.swift */; };
 		6E4B29EB2939F142009CD8F1 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B29EA2939F142009CD8F1 /* Resources.swift */; };
-		6E4B2A002939FBC9009CD8F1 /* MavenPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E4B29FA2939FBC9009CD8F1 /* MavenPro-Medium.ttf */; };
-		6E4B2A012939FBC9009CD8F1 /* MavenPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E4B29FB2939FBC9009CD8F1 /* MavenPro-Bold.ttf */; };
-		6E4B2A022939FBC9009CD8F1 /* MavenPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E4B29FC2939FBC9009CD8F1 /* MavenPro-Regular.ttf */; };
-		6E4B2A042939FBC9009CD8F1 /* MavenPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E4B29FE2939FBC9009CD8F1 /* MavenPro-Black.ttf */; };
 		6E4B2A07293A0111009CD8F1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4B2A06293A0111009CD8F1 /* Launch Screen.storyboard */; };
 		6E4B2A09293A0AAE009CD8F1 /* LocationAndFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B2A08293A0AAE009CD8F1 /* LocationAndFilterView.swift */; };
 		6E4B2A0C293A11D5009CD8F1 /* MainScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B2A0B293A11D5009CD8F1 /* MainScreenModel.swift */; };
@@ -58,6 +54,10 @@
 		6E7EC356293D0C8E00CFD559 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7EC355293D0C8E00CFD559 /* BottomSheet.swift */; };
 		6E7EC359293D0F1C00CFD559 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7EC358293D0F1C00CFD559 /* FilterView.swift */; };
 		6E7EC35C293D12FB00CFD559 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7EC35B293D12FB00CFD559 /* FilterCell.swift */; };
+		6E7EC360293D2E3F00CFD559 /* MavenPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E7EC35F293D2E3F00CFD559 /* MavenPro-Black.ttf */; };
+		6E7EC362293D2E4E00CFD559 /* MavenPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E7EC361293D2E4E00CFD559 /* MavenPro-Bold.ttf */; };
+		6E7EC364293D2E5D00CFD559 /* MavenPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E7EC363293D2E5D00CFD559 /* MavenPro-Medium.ttf */; };
+		6E7EC366293D2E6600CFD559 /* MavenPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E7EC365293D2E6600CFD559 /* MavenPro-Regular.ttf */; };
 		880BB8BFBBA0F8AEBD0E03FD /* Pods_testShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E00C59E43F07F1BDEA86754 /* Pods_testShop.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,10 +70,6 @@
 		6E4B29E82939F048009CD8F1 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		6E4B29EA2939F142009CD8F1 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		6E4B29F02939F67E009CD8F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		6E4B29FA2939FBC9009CD8F1 /* MavenPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MavenPro-Medium.ttf"; path = "../../../../../../../Downloads/Maven_Pro/static/MavenPro-Medium.ttf"; sourceTree = "<group>"; };
-		6E4B29FB2939FBC9009CD8F1 /* MavenPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MavenPro-Bold.ttf"; path = "../../../../../../../Downloads/Maven_Pro/static/MavenPro-Bold.ttf"; sourceTree = "<group>"; };
-		6E4B29FC2939FBC9009CD8F1 /* MavenPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MavenPro-Regular.ttf"; path = "../../../../../../../Downloads/Maven_Pro/static/MavenPro-Regular.ttf"; sourceTree = "<group>"; };
-		6E4B29FE2939FBC9009CD8F1 /* MavenPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MavenPro-Black.ttf"; path = "../../../../../../../Downloads/Maven_Pro/static/MavenPro-Black.ttf"; sourceTree = "<group>"; };
 		6E4B2A06293A0111009CD8F1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		6E4B2A08293A0AAE009CD8F1 /* LocationAndFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAndFilterView.swift; sourceTree = "<group>"; };
 		6E4B2A0B293A11D5009CD8F1 /* MainScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModel.swift; sourceTree = "<group>"; };
@@ -115,6 +111,10 @@
 		6E7EC355293D0C8E00CFD559 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
 		6E7EC358293D0F1C00CFD559 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		6E7EC35B293D12FB00CFD559 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		6E7EC35F293D2E3F00CFD559 /* MavenPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MavenPro-Black.ttf"; path = "../../../../../../../Downloads/Maven_Pro 2/static/MavenPro-Black.ttf"; sourceTree = "<group>"; };
+		6E7EC361293D2E4E00CFD559 /* MavenPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MavenPro-Bold.ttf"; path = "../../../../../../../Downloads/Maven_Pro 2/static/MavenPro-Bold.ttf"; sourceTree = "<group>"; };
+		6E7EC363293D2E5D00CFD559 /* MavenPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MavenPro-Medium.ttf"; path = "../../../../../../../Downloads/Maven_Pro 2/static/MavenPro-Medium.ttf"; sourceTree = "<group>"; };
+		6E7EC365293D2E6600CFD559 /* MavenPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MavenPro-Regular.ttf"; path = "../../../../../../../Downloads/Maven_Pro 2/static/MavenPro-Regular.ttf"; sourceTree = "<group>"; };
 		8E00C59E43F07F1BDEA86754 /* Pods_testShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02A05D95400BE50E30B8C46 /* Pods-testShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testShop.release.xcconfig"; path = "Target Support Files/Pods-testShop/Pods-testShop.release.xcconfig"; sourceTree = "<group>"; };
 		FCA36EF15F4B8EA2AE2AEFC3 /* Pods-testShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testShop.debug.xcconfig"; path = "Target Support Files/Pods-testShop/Pods-testShop.debug.xcconfig"; sourceTree = "<group>"; };
@@ -196,10 +196,10 @@
 		6E4B29DE2939E7F3009CD8F1 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				6E4B29FE2939FBC9009CD8F1 /* MavenPro-Black.ttf */,
-				6E4B29FB2939FBC9009CD8F1 /* MavenPro-Bold.ttf */,
-				6E4B29FA2939FBC9009CD8F1 /* MavenPro-Medium.ttf */,
-				6E4B29FC2939FBC9009CD8F1 /* MavenPro-Regular.ttf */,
+				6E7EC365293D2E6600CFD559 /* MavenPro-Regular.ttf */,
+				6E7EC363293D2E5D00CFD559 /* MavenPro-Medium.ttf */,
+				6E7EC361293D2E4E00CFD559 /* MavenPro-Bold.ttf */,
+				6E7EC35F293D2E3F00CFD559 /* MavenPro-Black.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -530,13 +530,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7EC366293D2E6600CFD559 /* MavenPro-Regular.ttf in Resources */,
+				6E7EC360293D2E3F00CFD559 /* MavenPro-Black.ttf in Resources */,
 				6E4B29D72939E576009CD8F1 /* Preview Assets.xcassets in Resources */,
-				6E4B2A022939FBC9009CD8F1 /* MavenPro-Regular.ttf in Resources */,
 				6E4B29D42939E576009CD8F1 /* Assets.xcassets in Resources */,
-				6E4B2A042939FBC9009CD8F1 /* MavenPro-Black.ttf in Resources */,
-				6E4B2A002939FBC9009CD8F1 /* MavenPro-Medium.ttf in Resources */,
-				6E4B2A012939FBC9009CD8F1 /* MavenPro-Bold.ttf in Resources */,
+				6E7EC362293D2E4E00CFD559 /* MavenPro-Bold.ttf in Resources */,
 				6E4B2A07293A0111009CD8F1 /* Launch Screen.storyboard in Resources */,
+				6E7EC364293D2E5D00CFD559 /* MavenPro-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
