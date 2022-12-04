@@ -1,14 +1,14 @@
 //
-//  MainScreenViewModel.swift
+//  BasketViewModel.swift
 //  testShop
 //
-//  Created by Кирилл Коновалов on 02.12.2022.
+//  Created by Кирилл Коновалов on 04.12.2022.
 //
 
 import Foundation
 
-class MainScreenViewModel: RemoteContentViewModel {
-    typealias Value = MainScreenModel
+class BasketViewModel: RemoteContentViewModel {
+    typealias Value = BasketModel
     
     private(set) var isInitialLoading: Bool = true
     @Published var presentIsInternetNoConnect = false
@@ -18,9 +18,9 @@ class MainScreenViewModel: RemoteContentViewModel {
     
     var successSubscriptionCompletion: (() -> ())? = nil
     
-    @Published var model: MainScreenModel?
+    @Published var model: BasketModel?
     
-    @Published var isShowingBottomSheet = false
+    @Published var image: [Card] = []
     
     init() {
         successSubscriptionCompletion = self.load
@@ -29,7 +29,7 @@ class MainScreenViewModel: RemoteContentViewModel {
     @objc func load() {
         loadingState = .loading(isInitial: isInitialLoading)
         
-        ApiWrapper.mainScreen() { [weak self] (response) in
+        ApiWrapper.basketScreen() { [weak self] (response) in
             switch response {
             case .success(let model):
                 DispatchQueue.main.async { [weak self] in

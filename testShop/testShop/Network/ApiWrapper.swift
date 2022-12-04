@@ -11,32 +11,24 @@ import Alamofire
 final class ApiWrapper: NSObject {
     typealias CompletionHandler<T> = Swift.Result<T, Error>
     
-    private static func getDataRequest(path: String,
-                                       parameters: Parameters,
-                                       headers: [String: String]) -> DataRequest {
+    private static func getDataRequest(path: String) -> DataRequest {
         let url = path
         
-        let httpHeaders = HTTPHeaders(headers)
-
         return AF.request(url,
                           method: .post,
-                          parameters: parameters,
-                          encoding: JSONEncoding.default,
-                          headers: httpHeaders)
-            .responseJSON { response in
-                print("""
+                          encoding: JSONEncoding.default)
+        .responseJSON { response in
+            print("""
                       === HTTP Response ===
                       path: \(path)
                       \(response.description)
-                      """)
-            }
+                  """)
+        }
     }
     
     private static func request<Model: Decodable>(path: String,
-                                                  parameters: Parameters = [:],
-                                                  headers: [String: String] = [:],
                                                   completion: @escaping (CompletionHandler<Model>) -> Void) {
-        getDataRequest(path: path, parameters: parameters, headers: headers)
+        getDataRequest(path: path)
             .responseDecodable(of: Model.self, queue: .global(qos: .utility)) { response in
                 DispatchQueue.main.async {
                     switch response.result {
@@ -53,5 +45,9 @@ final class ApiWrapper: NSObject {
     
     static func productScreen(completion: @escaping (CompletionHandler<ProductModel>) -> Void) {
         request(path: ServerConstants.productScreen, completion: completion)
+    }
+    
+    static func basketScreen(completion: @escaping (CompletionHandler<BasketModel>) -> Void) {
+        request(path: ServerConstants.basketScreen, completion: completion)
     }
 }

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LocationAndFilterView: View {
+    @ObservedObject var viewModel: MainScreenViewModel
+    
     var body: some View {
         HStack() {
             Spacer()
@@ -31,18 +33,12 @@ struct LocationAndFilterView: View {
             Spacer()
             
             Button {
-                
+                viewModel.isShowingBottomSheet.toggle()
             } label: {
                 Image("filter")
             }
 
         }
         .padding(.horizontal, 33)
-    }
-}
-
-struct LocationAndFilterView_Previews: PreviewProvider {
-    static var previews: some View {
-        LocationAndFilterView()
     }
 }

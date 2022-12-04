@@ -37,7 +37,6 @@
 		6E4B2A35293A3D97009CD8F1 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B2A34293A3D97009CD8F1 /* SearchView.swift */; };
 		6E4B2A37293A3F20009CD8F1 /* UIAplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B2A36293A3F20009CD8F1 /* UIAplication.swift */; };
 		6E4B2A39293A453E009CD8F1 /* HotSalesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B2A38293A453E009CD8F1 /* HotSalesView.swift */; };
-		6E4B2A3C293A4D2A009CD8F1 /* SkeletonUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4B2A3B293A4D2A009CD8F1 /* SkeletonUI */; };
 		6E4B2A3E293AAE0B009CD8F1 /* BestSellerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B2A3D293AAE0B009CD8F1 /* BestSellerView.swift */; };
 		6E4B2A41293ABA1B009CD8F1 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B2A40293ABA1B009CD8F1 /* ProductModel.swift */; };
 		6E4B2A44293ABC0E009CD8F1 /* ProdectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B2A43293ABC0E009CD8F1 /* ProdectViewModel.swift */; };
@@ -50,6 +49,15 @@
 		6E7EC33E293BC1FE00CFD559 /* CustomSpecificationProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7EC33D293BC1FE00CFD559 /* CustomSpecificationProductModel.swift */; };
 		6E7EC340293BE0E900CFD559 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7EC33F293BE0E900CFD559 /* TabView.swift */; };
 		6E7EC344293BE56900CFD559 /* BasketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7EC343293BE56900CFD559 /* BasketModel.swift */; };
+		6E7EC347293CE87000CFD559 /* BasketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7EC346293CE87000CFD559 /* BasketViewModel.swift */; };
+		6E7EC34A293CE8D000CFD559 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7EC349293CE8D000CFD559 /* BasketView.swift */; };
+		6E7EC34D293CE96400CFD559 /* BasketNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7EC34C293CE96400CFD559 /* BasketNavigationView.swift */; };
+		6E7EC34F293CEDDB00CFD559 /* BasketOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7EC34E293CEDDB00CFD559 /* BasketOverView.swift */; };
+		6E7EC351293CEE3C00CFD559 /* BasketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7EC350293CEE3C00CFD559 /* BasketCell.swift */; };
+		6E7EC354293D0C5300CFD559 /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7EC353293D0C5300CFD559 /* StarsView.swift */; };
+		6E7EC356293D0C8E00CFD559 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7EC355293D0C8E00CFD559 /* BottomSheet.swift */; };
+		6E7EC359293D0F1C00CFD559 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7EC358293D0F1C00CFD559 /* FilterView.swift */; };
+		6E7EC35C293D12FB00CFD559 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7EC35B293D12FB00CFD559 /* FilterCell.swift */; };
 		880BB8BFBBA0F8AEBD0E03FD /* Pods_testShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E00C59E43F07F1BDEA86754 /* Pods_testShop.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +106,15 @@
 		6E7EC33D293BC1FE00CFD559 /* CustomSpecificationProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSpecificationProductModel.swift; sourceTree = "<group>"; };
 		6E7EC33F293BE0E900CFD559 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		6E7EC343293BE56900CFD559 /* BasketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketModel.swift; sourceTree = "<group>"; };
+		6E7EC346293CE87000CFD559 /* BasketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewModel.swift; sourceTree = "<group>"; };
+		6E7EC349293CE8D000CFD559 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
+		6E7EC34C293CE96400CFD559 /* BasketNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketNavigationView.swift; sourceTree = "<group>"; };
+		6E7EC34E293CEDDB00CFD559 /* BasketOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketOverView.swift; sourceTree = "<group>"; };
+		6E7EC350293CEE3C00CFD559 /* BasketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketCell.swift; sourceTree = "<group>"; };
+		6E7EC353293D0C5300CFD559 /* StarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
+		6E7EC355293D0C8E00CFD559 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		6E7EC358293D0F1C00CFD559 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		6E7EC35B293D12FB00CFD559 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 		8E00C59E43F07F1BDEA86754 /* Pods_testShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02A05D95400BE50E30B8C46 /* Pods-testShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testShop.release.xcconfig"; path = "Target Support Files/Pods-testShop/Pods-testShop.release.xcconfig"; sourceTree = "<group>"; };
 		FCA36EF15F4B8EA2AE2AEFC3 /* Pods-testShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testShop.debug.xcconfig"; path = "Target Support Files/Pods-testShop/Pods-testShop.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,7 +126,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				880BB8BFBBA0F8AEBD0E03FD /* Pods_testShop.framework in Frameworks */,
-				6E4B2A3C293A4D2A009CD8F1 /* SkeletonUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +161,7 @@
 		6E4B29CE2939E575009CD8F1 /* testShop */ = {
 			isa = PBXGroup;
 			children = (
+				6E7EC352293D0BEE00CFD559 /* Components */,
 				6E4B2A1A293A1759009CD8F1 /* Network */,
 				6E4B29F02939F67E009CD8F1 /* Info.plist */,
 				6E4B29E72939EFAE009CD8F1 /* Extensions */,
@@ -224,7 +241,6 @@
 			children = (
 				6E4B29E42939EEFF009CD8F1 /* SubViews */,
 				6E4B29E52939EF17009CD8F1 /* MainScreenView.swift */,
-				6E7EC33F293BE0E900CFD559 /* TabView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -232,11 +248,13 @@
 		6E4B29E42939EEFF009CD8F1 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
+				6E7EC33F293BE0E900CFD559 /* TabView.swift */,
 				6E4B2A08293A0AAE009CD8F1 /* LocationAndFilterView.swift */,
 				6E4B2A32293A2AC5009CD8F1 /* Categories.swift */,
 				6E4B2A34293A3D97009CD8F1 /* SearchView.swift */,
 				6E4B2A38293A453E009CD8F1 /* HotSalesView.swift */,
 				6E4B2A3D293AAE0B009CD8F1 /* BestSellerView.swift */,
+				6E7EC35A293D12DE00CFD559 /* FilterView */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -344,9 +362,7 @@
 			isa = PBXGroup;
 			children = (
 				6E4B2A49293ABDD8009CD8F1 /* ProductNavigationView.swift */,
-				6E7EC332293AC25000CFD559 /* CaruselImage */,
 				6E7EC339293ACF9600CFD559 /* ProdectDescription.swift */,
-				6E7EC33B293ADA6800CFD559 /* SegmentControlView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -379,6 +395,8 @@
 		6E7EC341293BE54700CFD559 /* Basket */ = {
 			isa = PBXGroup;
 			children = (
+				6E7EC348293CE8BB00CFD559 /* View */,
+				6E7EC345293CE84E00CFD559 /* ViewModel */,
 				6E7EC342293BE55600CFD559 /* Model */,
 			);
 			path = Basket;
@@ -390,6 +408,53 @@
 				6E7EC343293BE56900CFD559 /* BasketModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6E7EC345293CE84E00CFD559 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6E7EC346293CE87000CFD559 /* BasketViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6E7EC348293CE8BB00CFD559 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6E7EC34B293CE94400CFD559 /* SubViews */,
+				6E7EC349293CE8D000CFD559 /* BasketView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6E7EC34B293CE94400CFD559 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				6E7EC34C293CE96400CFD559 /* BasketNavigationView.swift */,
+				6E7EC34E293CEDDB00CFD559 /* BasketOverView.swift */,
+				6E7EC350293CEE3C00CFD559 /* BasketCell.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		6E7EC352293D0BEE00CFD559 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6E7EC355293D0C8E00CFD559 /* BottomSheet.swift */,
+				6E7EC33B293ADA6800CFD559 /* SegmentControlView.swift */,
+				6E7EC332293AC25000CFD559 /* CaruselImage */,
+				6E7EC353293D0C5300CFD559 /* StarsView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		6E7EC35A293D12DE00CFD559 /* FilterView */ = {
+			isa = PBXGroup;
+			children = (
+				6E7EC358293D0F1C00CFD559 /* FilterView.swift */,
+				6E7EC35B293D12FB00CFD559 /* FilterCell.swift */,
+			);
+			path = FilterView;
 			sourceTree = "<group>";
 		};
 		B966111A9982906FBC03E8FC /* Pods */ = {
@@ -420,7 +485,6 @@
 			);
 			name = testShop;
 			packageProductDependencies = (
-				6E4B2A3B293A4D2A009CD8F1 /* SkeletonUI */,
 			);
 			productName = testShop;
 			productReference = 6E4B29CC2939E575009CD8F1 /* testShop.app */;
@@ -451,7 +515,6 @@
 			);
 			mainGroup = 6E4B29C32939E575009CD8F1;
 			packageReferences = (
-				6E4B2A3A293A4D2A009CD8F1 /* XCRemoteSwiftPackageReference "SkeletonUI" */,
 			);
 			productRefGroup = 6E4B29CD2939E575009CD8F1 /* Products */;
 			projectDirPath = "";
@@ -531,34 +594,43 @@
 				6E7EC344293BE56900CFD559 /* BasketModel.swift in Sources */,
 				6E7EC33C293ADA6800CFD559 /* SegmentControlView.swift in Sources */,
 				6E7EC338293AC30200CFD559 /* CaruselImageView.swift in Sources */,
+				6E7EC34A293CE8D000CFD559 /* BasketView.swift in Sources */,
+				6E7EC34F293CEDDB00CFD559 /* BasketOverView.swift in Sources */,
 				6E4B29E92939F048009CD8F1 /* Color.swift in Sources */,
 				6E4B2A2A293A2384009CD8F1 /* LoaderViewModel.swift in Sources */,
 				6E4B2A1C293A1781009CD8F1 /* ApiWrapper.swift in Sources */,
 				6E4B2A2F293A250D009CD8F1 /* Screen.swift in Sources */,
 				6E4B2A39293A453E009CD8F1 /* HotSalesView.swift in Sources */,
 				6E4B2A16293A12C6009CD8F1 /* AnyRemoteContent.swift in Sources */,
+				6E7EC35C293D12FB00CFD559 /* FilterCell.swift in Sources */,
 				6E4B2A12293A1289009CD8F1 /* RemoteContentViewModel.swift in Sources */,
 				6E4B2A0C293A11D5009CD8F1 /* MainScreenModel.swift in Sources */,
 				6E7EC33A293ACF9600CFD559 /* ProdectDescription.swift in Sources */,
+				6E7EC356293D0C8E00CFD559 /* BottomSheet.swift in Sources */,
 				6E4B2A37293A3F20009CD8F1 /* UIAplication.swift in Sources */,
 				6E4B2A10293A125A009CD8F1 /* RemoteContent.swift in Sources */,
 				6E4B2A47293ABC79009CD8F1 /* ProdectView.swift in Sources */,
 				6E4B2A35293A3D97009CD8F1 /* SearchView.swift in Sources */,
 				6E4B2A4A293ABDD8009CD8F1 /* ProductNavigationView.swift in Sources */,
+				6E7EC34D293CE96400CFD559 /* BasketNavigationView.swift in Sources */,
 				6E4B2A25293A2040009CD8F1 /* LoadingView.swift in Sources */,
 				6E4B29E62939EF17009CD8F1 /* MainScreenView.swift in Sources */,
 				6E4B2A1E293A193A009CD8F1 /* ServerConstants.swift in Sources */,
+				6E7EC347293CE87000CFD559 /* BasketViewModel.swift in Sources */,
 				6E4B2A14293A12AC009CD8F1 /* RemoteContentLoadingState.swift in Sources */,
 				6E4B2A31293A2563009CD8F1 /* CornerRadiusStyle.swift in Sources */,
 				6E4B2A2D293A23DC009CD8F1 /* BlurView.swift in Sources */,
 				6E4B2A41293ABA1B009CD8F1 /* ProductModel.swift in Sources */,
+				6E7EC354293D0C5300CFD559 /* StarsView.swift in Sources */,
 				6E4B29EB2939F142009CD8F1 /* Resources.swift in Sources */,
 				6E4B2A33293A2AC5009CD8F1 /* Categories.swift in Sources */,
 				6E7EC33E293BC1FE00CFD559 /* CustomSpecificationProductModel.swift in Sources */,
 				6E7EC340293BE0E900CFD559 /* TabView.swift in Sources */,
 				6E4B2A44293ABC0E009CD8F1 /* ProdectViewModel.swift in Sources */,
+				6E7EC359293D0F1C00CFD559 /* FilterView.swift in Sources */,
 				6E4B29D02939E575009CD8F1 /* testShopApp.swift in Sources */,
 				6E4B2A18293A12E8009CD8F1 /* RemoteContentView.swift in Sources */,
+				6E7EC351293CEE3C00CFD559 /* BasketCell.swift in Sources */,
 				6E7EC336293AC2B000CFD559 /* ContentViewModel.swift in Sources */,
 				6E4B2A3E293AAE0B009CD8F1 /* BestSellerView.swift in Sources */,
 			);
@@ -700,6 +772,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -735,6 +808,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -773,25 +847,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		6E4B2A3A293A4D2A009CD8F1 /* XCRemoteSwiftPackageReference "SkeletonUI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/CSolanaM/SkeletonUI.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6E4B2A3B293A4D2A009CD8F1 /* SkeletonUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6E4B2A3A293A4D2A009CD8F1 /* XCRemoteSwiftPackageReference "SkeletonUI" */;
-			productName = SkeletonUI;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6E4B29C42939E575009CD8F1 /* Project object */;
 }

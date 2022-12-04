@@ -76,12 +76,18 @@ struct Categories: View {
                                 categories[categorie].isActive = true
                             }
                         }) {
-                            Image(categories[categorie].image)
-                                .renderingMode(.template)
-                                .foregroundColor(categories[categorie].isActive ? Color.white : Resources.Colors.colorIconCategorie)
-                                .frame(width: 71, height: 71)
-                                .background(categories[categorie].isActive ? Resources.Colors.orange : Color.white)
-                                .clipShape(Circle())
+                            VStack(spacing: 7) {
+                                Image(categories[categorie].image)
+                                    .renderingMode(.template)
+                                    .foregroundColor(categories[categorie].isActive ? Color.white : Resources.Colors.colorIconCategorie)
+                                    .frame(width: 71, height: 71)
+                                    .background(categories[categorie].isActive ? Resources.Colors.orange : Color.white)
+                                    .clipShape(Circle())
+                                
+                                Text(categories[categorie].name)
+                                    .font(.custom(Resources.Fonts.medium.rawValue, size: 12))
+                                    .foregroundColor(categories[categorie].isActive ? Resources.Colors.orange : Resources.Colors.baseTextColor)
+                            }
                         }
                     }
                 }

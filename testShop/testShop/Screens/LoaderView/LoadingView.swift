@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SkeletonUI
 
 struct LoaderView: View {
     @Environment(\.presentationMode) var presentationMode
@@ -14,33 +13,12 @@ struct LoaderView: View {
     
     var body: some View {
         ZStack(alignment: .topLeading) {
-            VStack(spacing: 16) {
-                Rectangle()
-                    .frame(height: 172)
-                    .skeleton(with: true)
-                    .shape(type: .rectangle)
-                    .cornerRadius(radius: 24, corners: [.bottomLeft, .bottomRight])
-                
-                Rectangle()
-                    .skeleton(with: true)
-                    .shape(type: .rectangle)
-                    .frame(height: 346)
-                    .cornerRadius(10)
-                    .padding([.leading, .trailing], 16)
-                
-                Rectangle()
-                    .skeleton(with: true)
-                    .shape(type: .rectangle)
-                    .frame(height: 72)
-                    .cornerRadius(10)
-                    .padding([.leading, .trailing], 16)
-                
-                Rectangle()
-                    .skeleton(with: true)
-                    .shape(type: .rectangle)
-                    .frame(height: 72)
-                    .cornerRadius(10)
-                    .padding([.leading, .trailing], 16)
+            VStack() {
+                Spacer()
+                ActivityIndicator()
+                    .frame(width: 50, height: 50)
+                    .foregroundColor(Resources.Colors.orange)
+                Spacer()
             }
             
             if viewModel.showBack {
@@ -61,6 +39,41 @@ struct LoaderView: View {
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }
+}
+
+struct ActivityIndicator: View {
+    
+    @State private var isAnimating: Bool = false
+    
+    var body: some View {
+        GeometryReader { (geometry: GeometryProxy) in
+            ForEach(0..<5) { index in
+                Group {
+                    Circle()
+                        .frame(width: geometry.size.width / 5, height: geometry.size.height / 5)
+                        .scaleEffect(calcScale(index: index))
+                        .offset(y: calcYOffset(geometry))
+                }.frame(width: geometry.size.width, height: geometry.size.height)
+                    .rotationEffect(!self.isAnimating ? .degrees(0) : .degrees(360))
+                    .animation(Animation
+                                .timingCurve(0.5, 0.15 + Double(index) / 5, 0.25, 1, duration: 1.5)
+                                .repeatForever(autoreverses: false))
+            }
+        }
+        .aspectRatio(1, contentMode: .fit)
+        .onAppear {
+            self.isAnimating = true
+        }
+    }
+    
+    func calcScale(index: Int) -> CGFloat {
+        return (!isAnimating ? 1 - CGFloat(Float(index)) / 5 : 0.2 + CGFloat(index) / 5)
+    }
+    
+    func calcYOffset(_ geometry: GeometryProxy) -> CGFloat {
+        return geometry.size.width / 10 - geometry.size.height / 2
+    }
+    
 }
 
 struct LoaderView_Previews: PreviewProvider {

@@ -30,11 +30,11 @@ struct ProdectView: View {
     }
     
     @ViewBuilder func createContentView(response: ProdectViewModel.Value) -> some View {
-        ZStack {
-            Resources.Colors.background
-            
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack {
+        ScrollView(.vertical, showsIndicators: false) {
+            ZStack() {
+                Resources.Colors.background
+                
+                VStack() {
                     ProductNavigationView()
                         .padding(.top, Screen.height < 670 ? 40 : 66)
                     

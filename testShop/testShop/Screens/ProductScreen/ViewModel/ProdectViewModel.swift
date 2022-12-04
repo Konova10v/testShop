@@ -30,7 +30,6 @@ class ProdectViewModel: RemoteContentViewModel {
         successSubscriptionCompletion = self.load
     }
     
-    
     @objc func load() {
         loadingState = .loading(isInitial: isInitialLoading)
         

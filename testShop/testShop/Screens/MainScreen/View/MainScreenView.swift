@@ -30,14 +30,14 @@ struct MainScreenView: View {
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack {
-                        LocationAndFilterView()
+                        LocationAndFilterView(viewModel: viewModel)
                             .padding(.top, Screen.height < 670 ? 40 : 66)
                         
                         Categories()
                             .padding(.top, 18)
                         
                         SearchView()
-                            .padding(.top, 35)
+                            .padding(.top, 30)
                         
                         HotSalesView(model: response)
                             .padding(.top, 25)
@@ -52,12 +52,18 @@ struct MainScreenView: View {
                 
                 TabBarView()
                     .padding(.bottom, 2)
+                
+                BottomSheet(isShowing: $viewModel.isShowingBottomSheet, content: presentFilterView())
             }
             .ignoresSafeArea()
             .onTapGesture {
                 self.endEditing()
             }
         }
+    }
+    
+    func presentFilterView() -> AnyView {
+        return AnyView(FilterView(viewModel: viewModel))
     }
     
     private func endEditing() {
@@ -70,3 +76,4 @@ struct ContentView_Previews: PreviewProvider {
         MainScreenView()
     }
 }
+

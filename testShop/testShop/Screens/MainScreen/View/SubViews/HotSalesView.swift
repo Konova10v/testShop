@@ -79,7 +79,7 @@ struct HotSalesView: View {
                                         .foregroundColor(Resources.Colors.baseTextColor)
                                         .padding(.vertical, 5)
                                         .padding(.horizontal, 27)
-                                        .background(.white)
+                                        .background(Color.white)
                                         .cornerRadius(5)
                                 }
                             }

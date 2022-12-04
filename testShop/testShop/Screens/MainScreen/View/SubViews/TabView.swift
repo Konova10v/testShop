@@ -23,9 +23,11 @@ struct TabBarView: View {
             }
             Spacer()
             
-            Image("basket")
-                .resizable()
-                .frame(width: 18, height: 18)
+            NavigationLink(destination: BasketView()) {
+                Image("basket")
+                    .resizable()
+                    .frame(width: 18, height: 18)
+            }
             
             Spacer()
             

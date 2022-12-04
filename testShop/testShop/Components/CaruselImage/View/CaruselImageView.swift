@@ -15,7 +15,7 @@ struct CaruselImageView: View {
     var body: some View {
         let spacing: CGFloat = 16
         let widthOfHiddenCards: CGFloat = 32
-        let cardHeight: CGFloat = Screen.width - 120
+        let cardHeight: CGFloat = Screen.width - 80
         
         return Canvas {
             Carousel(
@@ -35,7 +35,6 @@ struct CaruselImageView: View {
                     }
                     .cornerRadius(8)
                     .shadow(color: Color.gray, radius: 4, x: 0, y: 4)
-                    .transition(AnyTransition.slide)
                     .animation(.spring())
                 }
             }
@@ -86,19 +85,14 @@ struct Carousel<Items : View> : View {
         let leftPadding = widthOfHiddenCards + spacing
         let totalMovement = cardWidth + spacing
                 
-        let activeOffset = xOffsetToShift + (leftPadding) - (totalMovement * CGFloat(UIState.activeCard)) - 30
-        let nextOffset = xOffsetToShift + (leftPadding) - (totalMovement * CGFloat(UIState.activeCard) + 1) - 100
+        let activeOffset = xOffsetToShift + (leftPadding) - (totalMovement * CGFloat(UIState.activeCard)) - 40
 
-        var calcOffset = Float(activeOffset)
-        
-        if (calcOffset != Float(nextOffset)) {
-            calcOffset = Float(activeOffset) + UIState.screenDrag
-        }
+        let calcOffset = Float(activeOffset)
         
         return HStack(alignment: .center, spacing: spacing) {
             items
         }
-        .offset(x: CGFloat(calcOffset), y: 0)
+        .offset(x: self.UIState.activeCard == 0 ? CGFloat(calcOffset) : CGFloat(calcOffset + 80), y: 0)
         .gesture(DragGesture().updating($isDetectingLongPress) { currentState, gestureState, transaction in
             self.UIState.screenDrag = Float(currentState.translation.width)
             
@@ -150,7 +144,7 @@ struct Item<Content: View>: View {
         @ViewBuilder _ content: () -> Content
     ) {
         self.content = content()
-        self.cardWidth = UIScreen.main.bounds.width - (widthOfHiddenCards*2) - (spacing*2) - 50
+        self.cardWidth = UIScreen.main.bounds.width - (widthOfHiddenCards*2) - (spacing*2) - 80
         self.cardHeight = cardHeight
         self._id = _id
     }

@@ -51,7 +51,7 @@ struct BestSellerView: View {
                                         .renderingMode(.template)
                                         .foregroundColor(Resources.Colors.orange)
                                         .frame(width: 25, height: 25)
-                                        .background(.white)
+                                        .background(Color.white)
                                         .clipShape(Circle())
                                 }
                                 .padding(.top, 12)
@@ -69,6 +69,7 @@ struct BestSellerView: View {
                                     .strikethrough()
                             }
                             .padding(.horizontal, 21)
+                            .padding(.top, 5)
                             
                             Text(sale.title)
                                 .font(.custom(Resources.Fonts.regular.rawValue, size: 10))
@@ -76,7 +77,7 @@ struct BestSellerView: View {
                                 .padding(.horizontal, 21)
                                 .padding(.bottom, 15)
                         }
-                        .background()
+                        .background(Color.white)
                         .cornerRadius(10)
                     }
                 }
