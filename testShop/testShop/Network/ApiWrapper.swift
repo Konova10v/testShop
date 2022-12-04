@@ -50,4 +50,8 @@ final class ApiWrapper: NSObject {
     static func mainScreen(completion: @escaping (CompletionHandler<MainScreenModel>) -> Void) {
         request(path: ServerConstants.mainScreen, completion: completion)
     }
+    
+    static func productScreen(completion: @escaping (CompletionHandler<ProductModel>) -> Void) {
+        request(path: ServerConstants.productScreen, completion: completion)
+    }
 }

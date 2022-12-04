@@ -24,17 +24,44 @@ struct MainScreenView: View {
     }
     
     @ViewBuilder func createContentView(response: MainScreenViewModel.Value) -> some View {
-        ZStack {
-            Resources.Colors.background
-            
-            VStack {
-             LocationAndFilterView()
-                    .padding(.top, 66)
+        NavigationView {
+            ZStack(alignment: .bottom) {
+                Resources.Colors.background
                 
-                Spacer()
+                ScrollView(.vertical, showsIndicators: false) {
+                    VStack {
+                        LocationAndFilterView()
+                            .padding(.top, Screen.height < 670 ? 40 : 66)
+                        
+                        Categories()
+                            .padding(.top, 18)
+                        
+                        SearchView()
+                            .padding(.top, 35)
+                        
+                        HotSalesView(model: response)
+                            .padding(.top, 25)
+                        
+                        BestSellerView(model: response)
+                            .padding(.top, 15)
+                            .padding(.bottom, 100)
+                        
+                        Spacer()
+                    }
+                }
+                
+                TabBarView()
+                    .padding(.bottom, 2)
+            }
+            .ignoresSafeArea()
+            .onTapGesture {
+                self.endEditing()
             }
         }
-        .ignoresSafeArea()
+    }
+    
+    private func endEditing() {
+        UIApplication.shared.endEditing()
     }
 }
 

@@ -5,7 +5,6 @@
 //  Created by Кирилл Коновалов on 02.12.2022.
 //
 
-
 import SwiftUI
 
 struct MainScreenModel: Codable {

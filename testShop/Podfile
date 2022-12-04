@@ -7,5 +7,6 @@ target 'testShop' do
 
   # Pods for testShop
   pod 'Alamofire'
+  pod 'SDWebImageSwiftUI'
 
 end

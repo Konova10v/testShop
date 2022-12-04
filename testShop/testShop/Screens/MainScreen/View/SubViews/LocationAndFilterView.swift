@@ -12,11 +12,20 @@ struct LocationAndFilterView: View {
         HStack() {
             Spacer()
             
-            HStack(spacing: 11) {
-                Image("location")
+            Button {
                 
-                Text("Zihuatanejo, Gro")
-                    .font(.custom(Resources.Fonts.medium.rawValue, size: 15))
+            } label: {
+                HStack(spacing: 11) {
+                    Image("location")
+                    
+                    HStack(spacing: 8) {
+                        Text("Zihuatanejo, Gro")
+                            .font(.custom(Resources.Fonts.medium.rawValue, size: 15))
+                            .foregroundColor(Resources.Colors.baseTextColor)
+                        
+                        Image("arrowDown")
+                    }
+                }
             }
             
             Spacer()
@@ -28,7 +37,7 @@ struct LocationAndFilterView: View {
             }
 
         }
-        .padding(.horizontal, 32)
+        .padding(.horizontal, 33)
     }
 }
 

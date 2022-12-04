@@ -12,6 +12,8 @@ enum Resources {
         static let background = Color.init(hex: "F5F5F5")
         static let orange = Color.init(hex: "FF6E4E")
         static let darkBlue = Color.init(hex: "010035")
+        static let baseTextColor = Color.init(hex: "010035")
+        static let colorIconCategorie = Color.init(hex: "B3B3C3")
     }
     
     enum Fonts: String {
